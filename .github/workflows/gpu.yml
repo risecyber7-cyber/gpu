@@ -1,0 +1,14 @@
+name: GPU Runner Test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  gpu-job:
+    runs-on: cirun-gpu-runner
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check GPU
+        run: nvidia-smi
