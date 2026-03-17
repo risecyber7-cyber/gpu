@@ -1,0 +1,8 @@
+runners:
+  gpu-runner:
+    cloud: aws
+    instance_type: g4dn.xlarge
+    region: ap-south-1
+    os: ubuntu22.04
+    disk_size: 120
+    spot: true
